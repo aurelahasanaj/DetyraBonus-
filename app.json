@@ -2,6 +2,7 @@
   "expo": {
     "name": "Find-Lost-Things",
     "slug": "Find-Lost-Things",
+    "scheme": "findlostthings",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,3 +29,4 @@
     "plugins": ["expo-router"]
   }
 }
+
