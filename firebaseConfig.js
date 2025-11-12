@@ -1,12 +1,17 @@
+
 import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDd3FLMfTnwdfDNJxILtx7l0YqUFnKyIx0",
-  authDomain: "refind-bonus.firebaseapp.com",
-  projectId: "refind-bonus",
-  storageBucket: "refind-bonus.firebasestorage.app",
-  messagingSenderId: "525836493151",
-  appId: "1:525836493151:web:b70f4566f0ebabf693d6ea",
-  measurementId: "G-RHMZZHQCXP"
+  apiKey: "AIzaSyAedu2b3YAPUovGbvrYF20YTGDH5EfVR7Q",
+  authDomain: "findlostthings-bonus.firebaseapp.com",
+  projectId: "findlostthings-bonus",
+  storageBucket: "findlostthings-bonus.firebasestorage.app",
+  messagingSenderId: "483733675535",
+  appId: "1:483733675535:web:7027069acfbd1d74084d7a"
 };
-export const app = initializeApp(firebaseConfig);import { initializeApp } from "firebase/app";
+
+const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
