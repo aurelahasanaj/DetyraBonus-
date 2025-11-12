@@ -2,6 +2,7 @@ import { Link } from "expo-router";
 import { ScrollView, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NavBar from "../components/NavBar";
+import { TouchableOpacity, Text, View, StyleSheet } from "react-native"; 
 
 export default function HomeScreen() {
   return (
@@ -92,3 +93,4 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 });
+
