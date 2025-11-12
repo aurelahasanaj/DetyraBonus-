@@ -1,5 +1,5 @@
-import { Text, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { Link } from "expo-router";
+import { ScrollView, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NavBar from "../components/NavBar";
 
@@ -32,7 +32,27 @@ export default function HomeScreen() {
             <Text style={styles.buttonText}>About</Text>
           </TouchableOpacity>
         </Link>
+
+        {/* 🔹 Butonat për autentifikim */}
+        <Link href="/signup" asChild>
+          <TouchableOpacity style={[styles.button, styles.authButton]}>
+            <Text style={styles.buttonText}>Sign Up</Text>
+          </TouchableOpacity>
+        </Link>
+
+        <Link href="/login" asChild>
+          <TouchableOpacity style={[styles.button, styles.authButton]}>
+            <Text style={styles.buttonText}>Login</Text>
+          </TouchableOpacity>
+        </Link>
+
+        <Link href="/logout" asChild>
+          <TouchableOpacity style={[styles.button, styles.authButton]}>
+            <Text style={styles.buttonText}>Logout</Text>
+          </TouchableOpacity>
+        </Link>
       </ScrollView>
+
       <NavBar />
     </SafeAreaView>
   );
@@ -62,6 +82,9 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     width: "80%",
     alignItems: "center",
+  },
+  authButton: {
+    backgroundColor: "#50C878", // ngjyrë tjetër për butonat e login/signup
   },
   buttonText: {
     color: "white",
