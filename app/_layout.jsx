@@ -20,8 +20,12 @@ export default function RootLayout() {
         <Stack.Screen name="foundItem" />
         <Stack.Screen name="profile" />
         <Stack.Screen name="about" />
+          <Stack.Screen name="login" />
+        <Stack.Screen name="signup" />
+        <Stack.Screen name="logout" />
       </Stack>
     </>
   );
 }
+
 
